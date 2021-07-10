@@ -1,7 +1,6 @@
-# Field Trip
-> _Field trip: face recognition in public transport_
+# Field trip: facial recognition on public transport
 
-Run main program and install any missing dependencies:
+Run main program and install missing dependencies:
 ```
 python fieldTrip.py
 ```
