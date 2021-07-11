@@ -43,7 +43,7 @@ codec = int(input_movie.get(cv2.CAP_PROP_FOURCC))
 fps = int(input_movie.get(cv2.CAP_PROP_FPS))
 frame_width = int(input_movie.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(input_movie.get(cv2.CAP_PROP_FRAME_HEIGHT))
-output_movie = cv2.VideoWriter('pexels-c-technical-5711968_out.mp4', codec, fps, (frame_width, frame_height))
+output_movie = cv2.VideoWriter('video_out.mp4', codec, fps, (frame_width, frame_height))
 
 """
 Looping:
@@ -63,7 +63,7 @@ while True:
     """
     Performance step: Only look for faces in frames where it is most likely to be detected
     Use countFrames.py and the rule of three (math) to figure out which frames to skip
-    For clip pexels-c-technical-5711968_out.mp4 the first 9 seconds are skipped, meaning 226 frames out of 352
+    For clip video_in.mp4 the first 9 seconds are skipped, meaning 226 frames out of 352
     """
     if frame_number < 226:
         print("Writing to output and skipping detection for frame {} / {}.".format(frame_number, length))
